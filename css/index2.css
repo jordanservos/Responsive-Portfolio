@@ -132,6 +132,16 @@ p {
     body {
         background-color: lightskyblue;
     }
+    section {
+        width: 60%;
+        margin: 0px 35px 0px 35px;
+    }
+    .header-container {
+        height: 70px;
+    }
+    .header-content {
+        margin: -50px 35px 0px 35px;
+    }
 }
 
 @media screen and (max-width: 768px) {

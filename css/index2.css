@@ -1,157 +1,201 @@
-* {
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-
-/* Header Section */
-
-.header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: yellow;
-    height: 120px;
-}
-
-header h1 aside ul {
-    font-family: 'Georgia', Times, Times New Roman, serif;
-}
-
-.aside-container {
-    margin-left: 2.3em;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 960px;
-    margin: 0 auto;
-    background-color: pink;
-}
-
-aside {
-    padding: 25px;
-    background-color: #4aaaa5;
-    color: white;
-    font-weight: bold;
-    font-size: large;
-    width: 120px;
-    height: 20px;
-    text-align: center;
-    margin: 2.8em 0 0 -36px;
-}
-
-nav {
-    margin: 5em 0 0 0;
-    background-color: orange;
-}
-
-ul,
-li {
-    padding-inline-start: 0px;
-    display: inline-block;
-    padding: 10px;
-}
-
-li {
-    color: gray;
-    padding: 0px 15px 0px 10px;
-    border-right: 2px solid lightgrey;
-    text-align: center;
-}
-
-.nav-links li:last-child {
-    border: none;
-}
-
-body {
-    background-color: lightseagreen;
-    /* background-image: url("../images/dust_scratches.png"); */
-}
-
-
-/* Main Body Section */
-
-.main-container {
-    width: 960px;
-    margin: 40px auto;
-}
-
-img {
-    float: left;
-    margin: 10px 10px 10px 0px;
-}
-
-section {
-    background-color: #fff;
-}
-
-section h1 {
-    color: #4aaaa5;
-    padding: 20px 10px 0px 20px;
-}
-
-hr {
-    margin: 10px 10px 0px 20px;
-}
-
-p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: grey;
-    font-size: small;
-    padding: 20px 20px 10px 20px;
-    line-height: 25px;
-}
-
-
-/* Footer Section */
-
-.footer {
-    flex-shrink: 0;
-    background: #666666;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 30px 0px 20px 0px;
-    border-top: 5px solid #4aaaa5;
-}
-
-
-/* Media Quries */
-
-@media screen and (max-width: 980px) {
-    body {
-        background-color: lightskyblue;
-    }
-    section {
-        width: 60%;
-        margin: 0px 35px 0px 35px;
-    }
-    .header-container {
-        height: 70px;
-    }
-    .header-content {
-        margin: -50px 35px 0px 35px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        background-color: lightsalmon;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    body {
-        background-color: lightyellow;
-    }
-}
+        * {
+            margin: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Header Section */
+        
+        .header-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: yellow;
+            height: 120px;
+        }
+        
+        header h1 aside ul {
+            font-family: 'Georgia', Times, Times New Roman, serif;
+        }
+        
+        .aside-container {
+            margin-left: 2.3em;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 960px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+        
+        aside {
+            padding: 25px;
+            background-color: #4aaaa5;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            width: 120px;
+            height: 20px;
+            text-align: center;
+            margin: 2.8em 0 0 -36px;
+        }
+        
+        nav {
+            margin: 5em 0 0 0;
+            background-color: orange;
+        }
+        
+        ul,
+        li {
+            padding-inline-start: 0px;
+            display: inline-block;
+            padding: 10px;
+        }
+        
+        li {
+            color: gray;
+            padding: 0px 15px 0px 10px;
+            border-right: 2px solid lightgrey;
+            text-align: center;
+        }
+        
+        .nav-links li:last-child {
+            border: none;
+        }
+        
+        body {
+            background-color: lightseagreen;
+            /* background-image: url("../images/dust_scratches.png"); */
+        }
+        /* Main Body Section */
+        
+        .main-container {
+            width: 960px;
+            margin: 40px auto;
+        }
+        
+        img {
+            float: left;
+            margin: 10px 10px 10px 0px;
+        }
+        
+        section {
+            background-color: #fff;
+        }
+        
+        section h1 {
+            color: #4aaaa5;
+            padding: 20px 10px 0px 20px;
+        }
+        
+        hr {
+            margin: 10px 10px 0px 20px;
+        }
+        
+        p {
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+            color: grey;
+            font-size: small;
+            padding: 20px 20px 10px 20px;
+            line-height: 25px;
+        }
+        /* Footer Section */
+        
+        .footer {
+            margin: auto auto 0 auto;
+            background: #666666;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 30px 0px 20px 0px;
+            border-top: 5px solid #4aaaa5;
+        }
+        /* Media Quries */
+        /* 980px */
+        
+        @media screen and (max-width: 980px) {
+            body {
+                background-color: lightskyblue;
+            }
+            section {
+                width: 60%;
+                margin: 0px 35px 0px 35px;
+            }
+            .header-container {
+                height: 70px;
+            }
+            .header-content {
+                margin: -50px 35px 0px 35px;
+            }
+        }
+        /* Media Quries */
+        /* 768px */
+        
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: lightsalmon;
+            }
+            .main-container {
+                width: 100%;
+                margin: 40px auto;
+            }
+            section {
+                width: 96%;
+                margin: 0px 15px 0px 15px;
+            }
+            .header-container {
+                height: 70px;
+            }
+            .header-content {
+                margin: -50px 15px 0px 15px;
+            }
+            img {
+                width: 50%;
+                height: auto;
+            }
+        }
+        /* Media Quries */
+        /* 640px */
+        
+        @media screen and (max-width: 640px) {
+            body {
+                background-color: lightyellow;
+            }
+            .main-container {
+                width: 100%;
+                margin: 60px auto;
+            }
+            section {
+                width: 96%;
+                margin: 0 auto;
+            }
+            .header-container {
+                height: 70px;
+            }
+            .header-content {
+                display: flex;
+                flex-direction: column;
+                margin: -50px 0px 0px 0px;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+            .main-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                margin: 0;
+            }
+            aside {
+                width: 100%;
+                margin: 50px -50px 0px -50px;
+            }
+        }

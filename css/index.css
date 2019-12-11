@@ -9,11 +9,15 @@
         }
         /* Header Section */
         
+        header {
+            box-shadow: 0 4px 2px -2px grey;
+        }
+        
         .header-container {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            background-color: yellow;
+            background-color: white;
             height: 120px;
         }
         
@@ -31,7 +35,7 @@
             justify-content: space-between;
             width: 960px;
             margin: 0 auto;
-            background-color: pink;
+            /* background-color: pink; */
         }
         
         aside {
@@ -48,7 +52,7 @@
         
         nav {
             margin: 5em 0 0 0;
-            background-color: orange;
+            background-color: white;
         }
         
         ul,
@@ -59,24 +63,35 @@
         }
         
         li {
-            color: gray;
             padding: 0px 15px 0px 10px;
             border-right: 2px solid lightgrey;
             text-align: center;
         }
         
+        a {
+            color: gray;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #ec184d;
+            text-decoration: none;
+            cursor: pointer;
+            border-bottom: 3px solid #ec184d;
+        }
+        
         .nav-links li:last-child {
             border: none;
         }
-        
-        body {
-            background-color: lightseagreen;
-            /* background-image: url("../images/dust_scratches.png"); */
-        }
         /* Main Body Section */
         
+        body {
+            /* background-color: lightseagreen; */
+            background-image: url("../images/dust_scratches.png");
+        }
+        
         .main-container {
-            width: 960px;
+            width: 950px;
             margin: 40px auto;
         }
         
@@ -87,6 +102,8 @@
         
         section {
             background-color: #fff;
+            margin-right: 15px;
+            box-shadow: 0px 2px 2px 0px grey;
         }
         
         section h1 {
@@ -95,7 +112,7 @@
         }
         
         hr {
-            margin: 10px 10px 0px 20px;
+            margin: 10px 20px 0px 20px;
         }
         
         p {
@@ -133,6 +150,10 @@
             .header-content {
                 margin: -50px 35px 0px 35px;
             }
+            img {
+                margin-right: 21px;
+                height: auto;
+            }
         }
         /* Media Quries */
         /* 768px */
@@ -164,6 +185,9 @@
         /* 640px */
         
         @media screen and (max-width: 640px) {
+            nav {
+                box-shadow: 0 4px 2px -2px grey;
+            }
             body {
                 background-color: lightyellow;
             }

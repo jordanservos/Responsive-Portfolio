@@ -37,7 +37,6 @@ header h1 aside ul {
     justify-content: space-between;
     width: 960px;
     margin: 0 auto;
-    /* background-color: pink; */
 }
 
 aside {
@@ -90,7 +89,6 @@ a:hover {
 /* Main Body Section */
 
 body {
-    /* background-color: lightseagreen; */
     background-image: url("../images/dust_scratches.png");
 }
 
@@ -101,11 +99,6 @@ body {
 
 img {
     margin: 20px 0px 20px 20px;
-}
-
-.image-wrap {
-    display: flex;
-    flex-direction: column;
 }
 
 section {
@@ -120,13 +113,56 @@ section h1 {
 }
 
 hr {
-    margin: 20px 20px 0px 20px;
+    margin: 20px 22px 0px 20px;
 }
 
 .card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+#first {
+    background-image: url("../images/sports-q-c-640-480-10.jpg");
+}
+
+#second {
+    background-image: url("../images/sports-q-c-640-480-6.jpg");
+}
+
+#third {
+    background-image: url("../images/business-q-c-640-480-3.jpg");
+}
+
+#fourth {
+    background-image: url("../images/business-q-c-640-480-5.jpg");
+}
+
+#fith {
+    background-image: url("../images/food-q-c-640-480-7.jpg");
+}
+
+#sixth {
+    background-image: url("../images/technics-q-c-640-480-9.jpg");
+}
+
+.card {
+    width: 220px;
+    height: 180px;
+    background-size: cover;
+    position: relative;
+    margin: 20px 20px 20px 20px;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 20px;
+    background-color: #4aaaa5;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 
@@ -149,9 +185,6 @@ hr {
 /* 980px */
 
 @media screen and (max-width: 980px) {
-    body {
-        background-color: lightskyblue;
-    }
     section {
         width: 55%;
         margin: 0px 35px 0px 35px;
@@ -162,9 +195,11 @@ hr {
     .header-content {
         margin: -50px 35px 0px 35px;
     }
-    img {
-        margin-right: 21px;
-        height: auto;
+    a:hover {
+        color: #ec184d;
+        text-decoration: none;
+        cursor: pointer;
+        border-bottom: 3px solid #ec184d;
     }
 }
 
@@ -182,6 +217,7 @@ hr {
     section {
         width: 96%;
         margin: 0px 15px 0px 15px;
+        padding: 0px 0px 40px 0px;
     }
     hr {
         padding-right: -10px;
@@ -193,9 +229,13 @@ hr {
     .header-content {
         margin: -50px 15px 0px 15px;
     }
-    img {
+    .card {
         width: 45%;
+        height: 300px;
         margin: 10px auto;
+    }
+    nav {
+        margin-right: -1em;
     }
 }
 
@@ -208,9 +248,6 @@ hr {
 @media screen and (max-width: 640px) {
     nav {
         box-shadow: 0 4px 2px -2px grey;
-    }
-    body {
-        background-color: lightyellow;
     }
     .main-container {
         width: 100%;
@@ -226,8 +263,9 @@ hr {
     hr {
         margin: 20px 30px 20px 30px;
     }
-    img {
+    .card {
         width: 90%;
+        height: 350px;
         margin: 10px auto;
     }
     .header-container {

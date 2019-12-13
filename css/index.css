@@ -137,9 +137,6 @@
         /* 980px */
         
         @media screen and (max-width: 980px) {
-            body {
-                background-color: lightskyblue;
-            }
             section {
                 width: 60%;
                 margin: 0px 35px 0px 35px;
@@ -159,9 +156,6 @@
         /* 768px */
         
         @media screen and (max-width: 768px) {
-            body {
-                background-color: lightsalmon;
-            }
             .main-container {
                 width: 100%;
                 margin: 40px auto;
@@ -187,9 +181,6 @@
         @media screen and (max-width: 640px) {
             nav {
                 box-shadow: 0 4px 2px -2px grey;
-            }
-            body {
-                background-color: lightyellow;
             }
             .main-container {
                 width: 100%;

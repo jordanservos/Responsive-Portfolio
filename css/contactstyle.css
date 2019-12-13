@@ -231,9 +231,6 @@ input[type=submit]:hover {
     nav {
         box-shadow: 0 4px 2px -2px grey;
     }
-    body {
-        background-color: lightyellow;
-    }
     .main-container {
         width: 96%;
         margin: 70px auto;

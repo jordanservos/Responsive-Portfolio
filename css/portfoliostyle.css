@@ -195,12 +195,6 @@ hr {
     .header-content {
         margin: -50px 35px 0px 35px;
     }
-    a:hover {
-        color: #ec184d;
-        text-decoration: none;
-        cursor: pointer;
-        border-bottom: 3px solid #ec184d;
-    }
 }
 
 
